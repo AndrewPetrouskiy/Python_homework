@@ -2,7 +2,7 @@
 # Парой считаем первый и последний элемент, второй и предпоследний и т.д.
 
 
-from random import randint
+from random import randint, sample
 
 
 def get_positive_int():
@@ -15,6 +15,13 @@ def get_positive_int():
                 print("This number isn't positive")
         except:
             print("Not a number... Try again")
+
+
+# def fill_array(num):
+#     array = sample(range(num), num)
+#     print(array)
+#     return array
+#делал не через sample, потому что через sample меньше разнообразие чисел
 
 
 def fill_array(num):

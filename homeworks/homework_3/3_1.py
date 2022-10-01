@@ -1,7 +1,7 @@
 # Task 1. Задайте список, состоящий из произвольных чисел, количество задаёт пользователь.
 # Напишите программу, которая найдёт сумму элементов списка, стоящих на нечётных позициях(не индексах).
 
-from random import randint
+from random import randint , sample
 
 
 def get_positive_int():
@@ -15,7 +15,13 @@ def get_positive_int():
         except:
             print("Not a number... Try again")
 
+# def fill_array(num):
+#     array = sample(range(num), num)
+#     print(array)
+#     return array
 
+
+#делал не через sample, потому что через sample меньше разнообразие чисел
 def fill_array(num):
     array = [randint(-10, 10) for i in range(num)]
     print(array)
