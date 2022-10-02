@@ -49,15 +49,15 @@ def fill_string_array(num, source):
         array.append("".join(temp))
     return array
 
-def find_second_encounter(array, word):
-    if array.count(word) > 1:
-        first_encounter = array.index(word)
-        print(f"The second encounter: {array.index(word, first_encounter + 1)}")
-    else:
-        print(-1)
+# def find_second_encounter(array, word):
+#     if array.count(word) > 1:
+#         first_encounter = array.index(word)
+#         print(f"The second encounter: {array.index(word, first_encounter + 1)}")
+#     else:
+#         print(-1)
 
 number = get_positive_int()
 source_word = input("Enter the source word ")
 words = fill_string_array(number, source_word)
 print(words)
-find_second_encounter(words, input("Enter the desire word "))
+# find_second_encounter(words, input("Enter the desire word "))
