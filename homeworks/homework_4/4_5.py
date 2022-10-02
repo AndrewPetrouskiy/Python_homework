@@ -15,3 +15,5 @@ with open("polynomial.txt", "r", encoding="utf-8") as text, \
         with open("polynomial3.txt", "a", encoding="utf-8") as text3:
             for i in lines3:
                 text3.write(i)
+    else:
+        print("The contents of the files do not match!")
