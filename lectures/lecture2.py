@@ -46,7 +46,22 @@
 
 
 #картеж
-t = tuple(['red', 'green', 'blue'])
-red, green, blue = t
-print('r:{} g:{} b:{}'.format(red, green, blue))
+# t = tuple(['red', 'green', 'blue'])
+# red, green, blue = t
+# print('r:{} g:{} b:{}'.format(red, green, blue))
 
+
+#словарь.
+# dictionary = {}
+# dictionary = \
+#  {
+#  'up': '↑',
+#  'left': '←',
+#  'down': '↓',
+#  'right': '→'
+#  }
+# print(dictionary) # {'up':'↑', 'left':'←', 'down':'↓', 'right':'→'}
+# print(dictionary['left']) # ←
+
+
+print(sum(map(int, list(input("Enter the number").replace(".", "")))))
