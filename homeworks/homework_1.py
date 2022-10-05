@@ -88,3 +88,76 @@ def length_between_two_points(a, b):
 # point_B = input_numbers(2)
 
 # print(length_between_two_points(point_A, point_B))
+
+
+
+#==========================================================================================================================
+#============ Teacher's answers============================================================================================
+
+# Task 1. Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
+
+# num = int(input())
+
+# if 5 < num < 8:
+#     print("Weekend")
+# elif 0 < num < 6:
+#     print("Workday")
+# else:
+#     print("It's not a day of the week!")
+
+
+# Task 2. Напишите программу для. проверки истинности утверждения ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z для всех значений предикат.
+
+for x in range(2):
+    for y in range(2):
+        for z in range(2):
+            if not (x or y or z) == (not x and not y and not z):
+                print(x, y, z)
+
+
+# Task3. Напишите программу, которая принимает на вход координаты точки (X и Y),
+# причём X ≠ 0 и Y ≠ 0 и выдаёт номер четверти плоскости, в которой находится эта точка (или на какой оси она находится).
+
+
+x = int(input())
+y = int(input())
+
+if x > 0 and y > 0:
+    print(1)
+elif x < 0 and y > 0:
+    print(2)
+elif x < 0 and y < 0:
+    print(3)
+elif x > 0 and y < 0:
+    print(4)
+else:
+    print("Error, 0 entered!")
+
+# Task 4. Напишите программу, которая по заданному номеру четверти,
+# показывает диапазон возможных координат точек в этой четверти (x и y)
+
+quarter = int(input())
+
+if quarter == 1:
+    print("x > 0, y > 0")
+elif quarter == 2:
+    print("x < 0, y > 0")
+elif quarter == 3:
+    print("x < 0, y < 0")
+elif quarter == 4:
+    print("x > 0, y < 0")
+else:
+    print("Error, wrong number!")
+
+
+# Task 5. Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 2D пространстве.
+
+x_1 = int(input())
+y_1 = int(input())
+x_2 = int(input())
+y_2 = int(input())
+
+print(f"{((x_2 - x_1) ** 2 + (y_2 - y_1) ** 2) ** 0.5:0.4}")
+
+
+

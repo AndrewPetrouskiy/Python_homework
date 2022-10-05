@@ -98,3 +98,97 @@ import random
 # print(array)
 # sort_array = sorted(array, key=lambda *args: random.random())
 # print(sort_array)
+
+
+
+
+
+#==================================================================================================================
+#===================== Teacher's solution==========================================================================
+
+
+
+# 1. Напишите программу, которая принимает на вход вещественное число
+#    и показывает сумму его цифр. Без работы с методами строк.
+
+num = float(input())
+sum_digits = 0
+
+power = len(str(num)) - 2
+num *= 10 ** power
+
+while num:
+    sum_digits += num % 10
+    num //= 10
+
+print(int(sum_digits))
+
+
+
+# 2. Напишите программу, которая принимает на вход число N 
+#    и выдает набор произведений чисел от 1 до N в виде списка. 
+#    1 - 1 * 1, 2 - 1 * 2, 3 - 1 * 2 * 3, 4 - 1 * 2 * 3 * 4 и т.д.
+
+num = int(input())
+sum_dig = 1
+
+for i in range(num):
+    sum_dig *= i + 1
+    print(sum_dig, end=", ")
+
+
+
+# 3. Задайте список из n чисел, заполненный по формуле (1 + 1/n) ** n и выведите на экран их сумму.
+
+num = int(input())
+sum_nums = 0
+list_nums = []
+
+for i in range(1, num + 1):
+    result = round((1 + 1 / i) ** i, 3)
+    list_nums.append(result)
+    sum_nums += result
+
+print(list_nums)
+print(sum_nums)
+
+
+# 4. * Напишите программу, которая принимает на вход 2 числа.
+#      Получите значение N, для пустого списка, заполните числами
+#      в диапазоне [-N, N]. Найдите произведение элементов
+#      на указанных позициях(не индексах).
+
+num = int(input("Enter the value of N: "))
+n_1 = int(input("Position one: "))
+n_2 = int(input("Position two: "))
+
+nums_list = list(range(-num, num + 1))
+
+print(nums_list)
+len_list = len(nums_list)
+
+if len_list >= n_1 > 0 and len_list >= n_2 > 0:
+    print(nums_list[n_1 - 1] * nums_list[n_2 - 1])
+else:
+    print("There are no values for these indexes!")
+
+
+
+
+
+    # 5. **Реализуйте алгоритм перемешивания списка.
+#    Без функции shuffle из модуля random.
+
+from random import randrange
+
+num = int(input())
+nums_list = list(range(num))
+res_list = []
+
+print(nums_list)
+
+for i in range(num):
+    n_1, n_2 = randrange(num), randrange(num)
+    nums_list[n_1], nums_list[n_2] = nums_list[n_2], nums_list[n_1]
+
+print(nums_list)
