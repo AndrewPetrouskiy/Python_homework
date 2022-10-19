@@ -1,0 +1,22 @@
+from time import  sleep
+
+def greeting():
+    print("Welcome to the Hogwarts. You can't become a student in this school, but you can become a teacher!!")
+    sleep(1)
+
+def first_menu():
+    print("Please, choose what do you want to do")
+    sleep(1)
+    
+    
+    
+def choose_column():
+    print("Please, choose the column what do you want to look")
+
+
+def choose_row():
+    print("Please, choose the row what do you want to look")
+
+def exit_list():
+    print("I hope that my app likes you! \n  Bye - Bye")
+
