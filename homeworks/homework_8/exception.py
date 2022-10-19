@@ -2,17 +2,16 @@ def enter_first_menu():
     while True:
         try:
             answer = int(input(
-                "1 - add teacher \n 2 - read the whole list of teachers \n 3 - read one of columns \n 4 - read one row \n 5 - escape \n Enter please "))
+                "1 - add teacher \n 2 - read the whole list of teachers \n 3 - read one of columns \n"
+                " 4 - read one row \n 5 - escape \n Enter please "))
             if 0 < answer < 6:
                 return answer
             else:
                 print("You entered wrong number")
         except:
             print("You're wrong. Try again")
-       
-            
-                 
-                           
+
+
 def enter_column():
     while True:
         try:
@@ -24,8 +23,8 @@ def enter_column():
                 print("You entered wrong number")
         except:
             print("You're wrong. Try again")
-            
-            
+
+
 def enter_row(my_read):
     while True:
         try:
@@ -37,6 +36,3 @@ def enter_row(my_read):
                 print("You entered wrong number")
         except:
             print("You're wrong. Try again")
-
-
-

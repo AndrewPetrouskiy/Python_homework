@@ -5,7 +5,7 @@ def greeting():
     sleep(1)
 
 def first_menu():
-    print("Please, choose what do you want to do")
+    print("Please, choose that do you want to do")
     sleep(1)
     
     
