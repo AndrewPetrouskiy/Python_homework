@@ -1,0 +1,9 @@
+Date;Time;Type operation;Source Data;Result
+21.10.2022;19:09:43;You entered wrong number;in main menu;You entered 15
+21.10.2022;19:18:34;add new person;full contact;[{"person's id": 3, 'name': 'John', 'surname': 'Bezos', 'phone number': '555-3478', 'description': 'Amazon'}]
+21.10.2022;19:28:03;add new person;full contact;[{"person's id": 4, 'name': 'Bill', 'surname': 'Gates', 'phone number': '555-7360', 'description': 'Microsoft'}]
+21.10.2022;19:28:09;You entered to read file;in main menu you entered 2;completed successfully
+21.10.2022;19:49:43;You entered to read file;in main menu you entered 2;completed successfully
+21.10.2022;19:49:48;You choose to look at the column;in main menu you entered 3;you entered the column 2
+21.10.2022;19:49:54;You choose to look at the row;in main menu you entered 4;you entered the row 1
+21.10.2022;19:49:56;press exit;in main menu you entered 5;The program ended
