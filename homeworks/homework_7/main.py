@@ -19,7 +19,7 @@ def main():
         elif num == 2:
             my_read = reading.read_file()
             print(my_read)
-            sr(["You entered to read file", f"in main menu you entered {num}", "completed successfully"])
+            sr(["You entered the readinf of file", f"in main menu you entered {num}", "completed successfully"])
         elif num == 3:
             ui.choose_column()
             my_read = reading.read_file()
